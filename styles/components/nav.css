@@ -1,0 +1,27 @@
+.nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-transform: uppercase;
+}
+.nav > a {
+  color: black;
+}
+.nav .nav-item {
+  padding: 0 20px;
+}
+.nav .nav-item:hover {
+  -webkit-transition: 1s;
+  -o-transition: 1s;
+  transition: 1s;
+  color: rgb(255, 136, 0);
+}
+
+.nav .is-active {
+  color: rgba(67, 67, 67, 0.5);
+}
+.nav .is-active:hover {
+  color: rgba(67, 67, 67, 0.5);
+}

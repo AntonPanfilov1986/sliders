@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Sliders</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles/main.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="hero">
+          <div class="logo">
+            <figure class="logo-bullet">
+              <a class="logo-bullet" href="#"
+                ><img src="images/bullet.png" alt="bullet"
+              /></a>
+            </figure>
+          </div>
+          <div class="nav">
+            <a class="nav-item" href="index.html">Slider 1</a>
+            <a class="nav-item" href="secondary.html">Slider 2</a>
+            <a class="nav-item is-active" href="third.html">Slider 3</a>
+            <a class="nav-item" href="last.html">Slider 4</a>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="section section-hero">
+        <figure class="section-background">
+          <img src="images/background.jpg" alt="picture" />
+        </figure>
+        <div class="container">
+          <div class="section-glide">
+            <div class="picture glide">
+              <div class="glide__track" data-glide-el="track">
+                <ul class="glide__slides">
+                  <li class="glide__slide">
+                    <figure class="image">
+                      <img src="images/flower.jpg" alt="picture" />
+                    </figure>
+                  </li>
+                  <li class="glide__slide">
+                    <figure class="image">
+                      <img src="images/poster-video.png" alt="picture" />
+                    </figure>
+                  </li>
+                  <li class="glide__slide">
+                    <figure class="image">
+                      <img src="images/hero-bg-default.png" alt="picture" />
+                    </figure>
+                  </li>
+                </ul>
+              </div>
+              <div class="glide__arrows" data-glide-el="controls">
+                <button
+                  class="glide__arrow glide__arrow--left"
+                  data-glide-dir="<"
+                >
+                  prev
+                </button>
+                <button
+                  class="glide__arrow glide__arrow--right"
+                  data-glide-dir=">"
+                >
+                  next
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="container">
+        <div class="footer-title">
+          © 2020 Designed by developer Anton Panfilov
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@glidejs/glide"></script>
+    <script>
+      new Glide(".picture").mount();
+    </script>
+    <script src="js/glide.min.js"></script>
+  </body>
+</html>
